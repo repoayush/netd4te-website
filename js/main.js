@@ -87,10 +87,27 @@ class FormHandler {
     const nameInput = document.getElementById('name').value.trim();
     const emailInput = document.getElementById('email').value.trim().toLowerCase();
 
+    // Hide any previous errors
+    this.error.style.display = 'none';
+
+    // 1. Check if fields are empty
+    if (!nameInput || !emailInput) {
+      this.error.textContent = "Please fill in all fields!";
+      this.error.style.display = 'block';
+      return;
+    }
+
+    // 2. Validate email format using Regular Expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput)) {
+      this.error.textContent = "Please enter a valid email address (e.g. name@gmail.com)!";
+      this.error.style.display = 'block';
+      return;
+    }
+
     // UI Loading State
     btn.innerHTML = '<span>Saving Your Spot...</span>';
     btn.disabled = true;
-    this.error.style.display = 'none';
 
     try {
       // Create a reference to a document where the ID is the exact email address
