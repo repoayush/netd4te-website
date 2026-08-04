@@ -1,45 +1,55 @@
 {
-  "name": "NETD4TE - Your AI Digital Wingman",
-  "short_name": "NETD4TE",
-  "description": "The next-generation AI dating platform built for introverts, trust-seekers, and Gen Z. Pre-register now for early access.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "orientation": "portrait-primary",
-  "scope": "/",
-  "lang": "en-US",
-  "categories": ["social", "lifestyle", "dating"],
-  "icons": [
-    {
-      "src": "images/notification-icon.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/app-icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ],
-  "related_applications": [],
-  "prefer_related_applications": false,
-  "shortcuts": [
-    {
-      "name": "Pre-Register",
-      "short_name": "Join",
-      "description": "Get early access to NETD4TE",
-      "url": "/#waitlist",
-      "icons": [{ "src": "images/notification-icon.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "Investors",
-      "short_name": "Invest",
-      "description": "Investment and partnership inquiries",
-      "url": "/#investors",
-      "icons": [{ "src": "images/notification-icon.png", "sizes": "96x96" }]
-    }
-  ]
+"id": "/",
+"name": "NETD4TE - Your AI Digital Wingman",
+"short_name": "NETD4TE",
+"description": "The next-generation AI dating app for introverts and singles. Pre-register now for early access to your digital wingman.",
+"start_url": "/",
+"display": "standalone",
+"display_override": ["standalone", "minimal-ui"],
+"background_color": "#000000",
+"theme_color": "#000000",
+"orientation": "portrait-primary",
+"dir": "ltr",
+"scope": "/",
+"lang": "en-US",
+"categories": ["social", "lifestyle", "dating"],
+"icons": [
+{
+"src": "images/notification-icon.png",
+"sizes": "192x192",
+"type": "image/png",
+"purpose": "any maskable"
+},
+{
+"src": "images/app-icon.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any maskable"
+}
+],
+"related_applications": [],
+"prefer_related_applications": false,
+"shortcuts": [
+{
+"name": "Pre-Register",
+"short_name": "Join",
+"description": "Get early access to NETD4TE",
+"url": "/#waitlist",
+"icons": [{ "src": "images/notification-icon.png", "sizes": "96x96" }]
+},
+{
+"name": "Features",
+"short_name": "Features",
+"description": "See what's coming to NETD4TE",
+"url": "/features",
+"icons": [{ "src": "images/notification-icon.png", "sizes": "96x96" }]
+},
+{
+"name": "Invest",
+"short_name": "Invest",
+"description": "Investment and partnership inquiries",
+"url": "/invest",
+"icons": [{ "src": "images/notification-icon.png", "sizes": "96x96" }]
+}
+]
 }
